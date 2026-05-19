@@ -1,11 +1,8 @@
-import Login from './components/LoginScreen'
+import React from 'react';
+import AppRoutes from './AppRoutes'
 
-function App() {
+export default function App() {
   return (
-    <div>
-      <Login />
-    </div>
-  )
+    <AppRoutes />
+  );
 }
-
-export default App

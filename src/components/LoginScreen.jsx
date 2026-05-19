@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/LoginScreen.css';
 import logo from '../assets/logo_toque-final-104h.png';
+import { Link } from 'react-router-dom';
+import '../styles/LoginScreen.css';
 
 function Login() {
     const [email, setEmail] = useState(() => {
@@ -67,9 +68,9 @@ function Login() {
             </main>
 
             <footer className="login-footer">
-                <a href="./RegisterScreen.jsx">
+                <Link to="/Register">
                     Não tem uma conta? Registre-se aqui
-                </a>
+                </Link>
             </footer>
 
         </div>

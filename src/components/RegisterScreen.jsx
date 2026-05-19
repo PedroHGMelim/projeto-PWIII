@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/RegisterScreen.css';
 import logo from '../assets/logo_toque-final-104h.png';
 
@@ -73,9 +74,9 @@ function Register() {
             </main>
 
             <footer className="register-footer">
-                <a href="./LoginScreen.jsx">
+                <Link to="/">
                     Tem uma conta? Entre por aqui
-                </a>
+                </Link>
             </footer>
 
         </div>
